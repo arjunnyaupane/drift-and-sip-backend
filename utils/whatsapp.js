@@ -1,6 +1,11 @@
 import axios from 'axios';
 import dotenv from 'dotenv';
 dotenv.config();
+console.log('🔍 Instance ID:', process.env.ULTRA_INSTANCE_ID);
+console.log('🔍 Token:', process.env.ULTRA_TOKEN);
+console.log('🔍 Owner Phone:', process.env.OWNER_PHONE);
+
+
 
 export const sendWhatsAppMessage = async (to, message) => {
   try {

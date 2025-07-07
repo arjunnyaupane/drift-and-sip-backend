@@ -11,10 +11,10 @@ const orderSchema = new mongoose.Schema(
     name: String,
     phone: String,
     deliveryMethod: {
-      type: String,
-      enum: ['Pickup', 'Delivery'],
-      required: true,
-    },
+  type: String,
+  enum: ['Home Delivery', 'Dine-In'],
+  required: true,
+},
     address: String, // Optional, required only for Delivery
     payment: {
       type: String,
